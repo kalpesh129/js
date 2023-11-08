@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <Ɵtle>Experiment No 10</Ɵtle>
+</head> 
+<body> 
+ <h1>JavaScript ProperƟes</h1>
+ <h3 id="browserInfo"></h3> 
+ <h3 id="screenInfo"></h3> 
+ <h3 id="historyInfo"></h3> 
+ <h3 id="paragraphCount"></h3> 
+ <h3 id="replaceText">Original Text</h3> 
+ <script> 
+ const browserInfo = `Browser Name: ${navigator.appName}, Version: ${navigator.appVersion}`; 
+ document.getElementById('browserInfo').textContent = browserInfo; 
+const screenInfo = `Screen Width: ${window.screen.width}, Screen Height: ${window.screen.height}`; 
+ document.getElementById('screenInfo').textContent = screenInfo; 
+const historyInfo = `History Length: ${window.history.length}`; 
+ document.getElementById('historyInfo').textContent = historyInfo; 
+const paragraphCount = document.getElementsByTagName('p').length; 
+ document.getElementById('paragraphCount').textContent = `Number of <p> tags: 
+${paragraphCount}`; 
+ const replaceTextElement = document.getElementById('replaceText'); 
+ replaceTextElement.textContent = 'Replaced Text'; 
+: SAKSHI KHATAL
+: 404C034
+ </script> 
+</body> 
+</html>
